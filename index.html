@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            overflow-x: hidden;
+        }
+
+        .video{
+            height: 100%;
+            width: 100%; 
+            margin-bottom: 0;
+        }
+        .over{
+            height: 117%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.597); 
+            position: absolute;
+            top: 50px;
+        }
+        .header{
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            height: 50px;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+            z-index: 11;
+        }
+
+        .item1{
+            margin-right: 50vw;
+        }
+        .item{
+            color: white;
+        }
+        .buy{
+            position: absolute;
+            top: 80%;
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 12px;
+            padding: 20px;
+            right: 43%;
+            z-index: 10;
+            color: white;
+            font-size: 34px;
+        }
+        .buy:hover{
+            background-color: rgba(240, 248, 255, 0.147);
+        }
+        .adv{
+            background-color: rgb(9, 10, 11);
+            height: 120vh;
+            margin-top: 0;
+            position: relative;
+            top: -10px;
+        }
+        .adv h1{
+            text-align: center;
+            color: white;
+            position: relative;
+            top: 100px;
+        }
+        .spline{
+            position: relative;
+            top: 30vh;
+            left: 30vw;
+        }
+        .container{
+            background-color: green;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: repeat(4, 1fr);
+            grid-auto-flow: dense;
+            margin-top: -10px;
+        }
+        .hello{
+            grid-row: span 2;
+        }
+        img{
+            height: 600px;
+            width: 400px;
+            margin: 40px;
+        }
+
+        .present{
+            height: 400px;
+            background-color: rgb(14, 17, 35);
+            color: white;
+            margin-top: -10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="item item1">psp</div>
+        <div class="item">games</div>
+        <div class="item">accesories</div>
+        <div class="item">help</div>
+    </div>
+    <video autoplay loop muted plays-inline class="video">
+        <source src="Untitled video - Made with Clipchamp.mp4">
+    </video>
+    <button class="buy">Purchase Now</button>
+    <div class="over"></div>
+    <div class="adv">
+        <h1>Experience a whole new way to play games</h1>
+        <script  type="module" src="https://unpkg.com/@splinetool/viewer@1.9.3/build/spline-viewer.js"></script>
+<spline-viewer class="spline" url="https://prod.spline.design/zQCI8lJUeYE-Ey71/scene.splinecode"></spline-viewer>
+    </div>
+    <div class="present">play some of the best games</div>
+    <div class="container">
+        <div class="item"><img src="8e75c2141ce84a45112a405b731cdce2.jpg" alt=""></div>
+        <div class="item"><img src="_-Dantes-Inferno-PSP-_.jpg" alt=""></div>
+        <div class="item"><img src="12044-crysis-portable.png" alt=""></div>
+        <div class="item"><img src="6467535-the-warriors-psp-front-cover.jpg" alt=""></div>
+        <div class="item"><img src="WipeoutPure_PSP_20050205.jpg" alt=""></div>
+        <div class="item"><img src="0b6f946370df9534a6f43824686da62a.jpg" alt=""></div>
+        <div class="item"><img src="Assassins_Creed_Bloodlines_USA_PSP-Coverart.jpg" alt=""></div>
+        <div class="item"><img src="monster_hunter_freedom_2_frontcover_large_UEJQ2On0ZVIqtCR.jpg" alt=""></div>
+    </div>
+    <div class="end">this is a dummy website</div>
+    
+</body>
+</html>
