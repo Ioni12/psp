@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <style>
         *{
             margin: 0;
@@ -38,10 +41,24 @@
         }
 
         .item1{
+            position: relative;
+            top: 0;
             margin-right: 50vw;
+            height: 100px;
+            width: 100px;
+        }
+        .item1 img{
+            background-size: cover;
+            position: relative;
+            top: -5px;
+            margin-right: 50vw;
+            height: 30px;
+            width: 80px;
         }
         .item{
             color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
         }
         .buy{
             position: absolute;
@@ -67,9 +84,11 @@
         }
         .adv h1{
             text-align: center;
-            color: white;
             position: relative;
             top: 100px;
+        }
+        #text1{
+            color: #1A2130;
         }
         .spline{
             position: relative;
@@ -130,7 +149,7 @@
 </head>
 <body>
     <div class="header">
-        <div class="item item1">psp</div>
+        <div class="item item1"><img src="https://see.fontimg.com/api/renderfont4/YxxO/eyJyIjoiZnMiLCJoIjoyNiwidyI6MTI1MCwiZnMiOjIxLCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzAwMDAwMCIsInQiOjF9/UFNQ/the-rave-is-in-your-pants.png" alt="Playstation fonts"></a></div>
         <div class="item">games</div>
         <div class="item">accesories</div>
         <div class="item">help</div>
@@ -141,9 +160,9 @@
     <button class="buy">Purchase Now</button>
     <div class="over"></div>
     <div class="adv">
-        <h1>Experience a whole new way to play games</h1>
-        <script  type="module" src="https://unpkg.com/@splinetool/viewer@1.9.3/build/spline-viewer.js"></script>
-        <spline-viewer class="spline" url="https://prod.spline.design/zQCI8lJUeYE-Ey71/scene.splinecode"></spline-viewer>
+        <h1 id="text1">Experience a whole new way to play games</h1>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.3/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/catKE8U-aFmlrRLQ/scene.splinecode"></spline-viewer>
     </div>
     <div class="present">play some of the best games</div>
     <div class="container">
@@ -158,6 +177,6 @@
         <div class="item2 item3"><h1>Other</h1></div>
     </div>
     <div class="end"><h1 id="text">this is a dummy website</h1></div>
-    
+    <script src="index.js"></script>
 </body>
 </html>
