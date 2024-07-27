@@ -19,7 +19,6 @@ gsap.to(adv, {
         toggleActions: "restart complete reverse reset",
         start: "top center",
         end: "center 40%",
-        markers: true,
     }, backgroundColor: "#83B4FF", duration: 4
 });
 
@@ -28,7 +27,6 @@ gsap.from("#text1", {
         trigger: adv,
         start: "top center",
         end: "center 40%",
-        markers: true,
         toggleActions: "restart complete reverse reset",
     }, 
     y: 100, 
@@ -42,7 +40,6 @@ gsap.from(".present", {
         trigger: ".present",
         start: "-20% center",
         end: "center 40%",
-        markers: true,
         toggleActions: "restart complete reverse reset",
     },
     duration: 2,
@@ -54,7 +51,6 @@ gsap.to(".container", {
         trigger: ".present",
         start: "-20% center",
         end: "center 40%",
-        markers: true,
         toggleActions: "restart complete reverse reset",
     },
     duration: 2,
@@ -66,7 +62,6 @@ gsap.from(".first", {
         trigger: ".first",
         start: "-20% center",
         end: "center 40%",
-        markers: true,
         toggleActions: "restart complete reverse reset",
     },
     duration: 3,
@@ -79,7 +74,6 @@ gsap.from(".sec", {
         trigger: ".sec",
         start: "-20% center",
         end: "center 40%",
-        markers: true,
         toggleActions: "restart complete reverse reset",
     },
     duration: 3,
@@ -92,10 +86,14 @@ gsap.from(".third", {
         trigger: ".third",
         start: "-20% center",
         end: "center 40%",
-        markers: true,
         toggleActions: "restart complete reverse reset",
     },
     duration: 3,
     y:200,
     opacity: 0
 })
+
+window.onload = function(){
+    var shadowRoot = document.querySelector("spline-viewer").shadowRoot;
+    shadowRoot.querySelector("#logo").remove();
+}
