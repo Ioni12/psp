@@ -91,12 +91,11 @@
             color: #1A2130;
         }
         .spline{
-            position: relative;
-            top: 30vh;
-            left: 30vw;
+            margin-bottom: 0;
+            height: 800px;
         }
         .container{
-            background-color: green;
+            background-color: #83B4FF;
             display: grid;
             grid-gap: 10px;
             grid-template-columns: repeat(3, 1fr);
@@ -116,18 +115,21 @@
             margin: 40px;
         }
         .item2:hover{
-            background-color: rgba(0, 0, 255, 0.515);
+            background-color: rgb(48, 51, 69);
             border-radius: 30px;
             box-shadow:  
-            0 0 60px 30px #fff,
-            0 0 100px 60px #f0f,
-            0 0 140px 90px #0ff;;
+            0 0 20px 10px rgb(48, 51, 69),
+            0 0 30px 20px rgb(48, 51, 69),
+            0 0 40px 30px rgb(64, 66, 80);;
         }
 
         .present{
             height: 400px;
             background-color: rgb(14, 17, 35);
             color: white;
+            text-align: center;
+            font-size: 3rem;
+            padding-top: 25vh;
             margin-top: -10px;
         }
         .end{
@@ -162,19 +164,18 @@
     <div class="adv">
         <h1 id="text1">Experience a whole new way to play games</h1>
         <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.3/build/spline-viewer.js"></script>
-<spline-viewer url="https://prod.spline.design/catKE8U-aFmlrRLQ/scene.splinecode"></spline-viewer>
-    </div>
+<spline-viewer class="spline" url="https://prod.spline.design/catKE8U-aFmlrRLQ/scene.splinecode"></spline-viewer>
     <div class="present">play some of the best games</div>
     <div class="container">
-        <div class="item2"><img src="8e75c2141ce84a45112a405b731cdce2.jpg" alt=""></div>
-        <div class="item2"><img src="_-Dantes-Inferno-PSP-_.jpg" alt=""></div>
-        <div class="item2"><img src="12044-crysis-portable.png" alt=""></div>
-        <div class="item2"><img src="6467535-the-warriors-psp-front-cover.jpg" alt=""></div>
-        <div class="item2"><img src="WipeoutPure_PSP_20050205.jpg" alt=""></div>
-        <div class="item2"><img src="0b6f946370df9534a6f43824686da62a.jpg" alt=""></div>
-        <div class="item2"><img src="Assassins_Creed_Bloodlines_USA_PSP-Coverart.jpg" alt=""></div>
-        <div class="item2"><img src="monster_hunter_freedom_2_frontcover_large_UEJQ2On0ZVIqtCR.jpg" alt=""></div>
-        <div class="item2 item3"><h1>Other</h1></div>
+        <div class="item2 first"><img src="8e75c2141ce84a45112a405b731cdce2.jpg" alt=""></div>
+        <div class="item2 first"><img src="_-Dantes-Inferno-PSP-_.jpg" alt=""></div>
+        <div class="item2 first"><img src="12044-crysis-portable.png" alt=""></div>
+        <div class="item2 sec"><img src="6467535-the-warriors-psp-front-cover.jpg" alt=""></div>
+        <div class="item2 sec"><img src="WipeoutPure_PSP_20050205.jpg" alt=""></div>
+        <div class="item2 sec"><img src="0b6f946370df9534a6f43824686da62a.jpg" alt=""></div>
+        <div class="item2 third"><img src="Assassins_Creed_Bloodlines_USA_PSP-Coverart.jpg" alt=""></div>
+        <div class="item2 third"><img src="monster_hunter_freedom_2_frontcover_large_UEJQ2On0ZVIqtCR.jpg" alt=""></div>
+        <div class="item2 third item3"><h1>Other</h1></div>
     </div>
     <div class="end"><h1 id="text">this is a dummy website</h1></div>
     <script src="index.js"></script>
