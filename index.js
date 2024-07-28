@@ -80,17 +80,18 @@ gsap.from(".first", {
 })
 gsap.to(".spline", {
     scrollTrigger:{
-        trigger: ".video",
-        start: "-20% center",
-        end: "center 40%",
+        trigger: ".black",
+        start: "bottom center",
+        end: "700vh 40%",
         toggleActions: "restart complete reverse reset",
         markers: true
     },
-    display: "none"
+    display: "flex",
+    duration: 10
 })
 gsap.to(".spline", {
     scrollTrigger:{
-        trigger: ".first",
+        trigger: ".present",
         start: "-20% center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
@@ -123,6 +124,13 @@ gsap.from(".third", {
     duration: 3,
     y:200,
     opacity: 0
+})
+
+let mm = gsap.matchMedia();
+
+mm.add("(max-width: 720px)", () => {
+    gsap.to(".black", {height: 200});
+    gsap.to(".buy", {height: 50, width:100, padding: 5, fontSize: 16,  y: -220, x: 20});
 })
 
 window.onload = function(){
