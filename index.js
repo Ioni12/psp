@@ -9,6 +9,11 @@ else
     console.log("its ok");
 }
 
+gsap.set(".header", {clearProps: "all"});
+window.addEventListener('scroll', function() {
+    document.querySelector('.header').style.transform = 'translateZ(0)';
+  }, {passive: true});
+
 const adv = document.querySelector(".adv");
 
 
@@ -19,6 +24,7 @@ gsap.to(adv, {
         toggleActions: "restart complete reverse reset",
         start: "top center",
         end: "center 40%",
+        markers: true,
     }, backgroundColor: "#83B4FF", duration: 4
 });
 
@@ -28,6 +34,7 @@ gsap.from("#text1", {
         start: "top center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
+        markers: true
     }, 
     y: 100, 
     duration: 1,
@@ -41,6 +48,7 @@ gsap.from(".present", {
         start: "-20% center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
+        markers: true
     },
     duration: 2,
     backgroundColor: "#83B4FF"
@@ -52,6 +60,7 @@ gsap.to(".container", {
         start: "-20% center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
+        markers: true
     },
     duration: 2,
     backgroundColor: " rgb(14, 17, 35)"
@@ -63,6 +72,7 @@ gsap.from(".first", {
         start: "-20% center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
+        markers: true
     },
     duration: 3,
     y:200,
@@ -75,6 +85,7 @@ gsap.from(".sec", {
         start: "-20% center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
+        markers: true
     },
     duration: 3,
     y:200,
@@ -87,6 +98,7 @@ gsap.from(".third", {
         start: "-20% center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
+        markers: true
     },
     duration: 3,
     y:200,
