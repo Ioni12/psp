@@ -24,7 +24,7 @@ gsap.to(adv, {
         toggleActions: "restart complete reverse reset",
         start: "top center",
         end: "center 40%",
-        markers: true,
+        // markers: true
     }, backgroundColor: "#83B4FF", duration: 4
 });
 
@@ -34,7 +34,7 @@ gsap.from("#text1", {
         start: "top center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
-        markers: true
+        // markers: true
     }, 
     y: 100, 
     duration: 1,
@@ -48,7 +48,7 @@ gsap.from(".present", {
         start: "-20% center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
-        markers: true
+        // markers: true
     },
     duration: 2,
     backgroundColor: "#83B4FF"
@@ -60,7 +60,7 @@ gsap.to(".container", {
         start: "-20% center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
-        markers: true
+        // markers: true
     },
     duration: 2,
     backgroundColor: " rgb(14, 17, 35)"
@@ -72,11 +72,31 @@ gsap.from(".first", {
         start: "-20% center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
-        markers: true
+        // markers: true
     },
     duration: 3,
     y:200,
     opacity: 0
+})
+gsap.to(".spline", {
+    scrollTrigger:{
+        trigger: ".video",
+        start: "-20% center",
+        end: "center 40%",
+        toggleActions: "restart complete reverse reset",
+        markers: true
+    },
+    display: "none"
+})
+gsap.to(".spline", {
+    scrollTrigger:{
+        trigger: ".first",
+        start: "-20% center",
+        end: "center 40%",
+        toggleActions: "restart complete reverse reset",
+        markers: true
+    },
+    display: "none"
 })
 
 gsap.from(".sec", {

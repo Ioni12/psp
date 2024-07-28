@@ -83,6 +83,7 @@ body{
 .spline{
     margin-bottom: 0;
     height: 800px;
+    display: none;
 }
 .container{
     background-color: #83B4FF;
