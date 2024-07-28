@@ -84,7 +84,7 @@ gsap.to(".spline", {
         start: "bottom center",
         end: "700vh 40%",
         toggleActions: "restart complete reverse reset",
-        markers: true
+        // markers: true
     },
     display: "flex",
     duration: 10
@@ -95,7 +95,7 @@ gsap.to(".spline", {
         start: "-20% center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
-        markers: true
+        // markers: true
     },
     display: "none"
 })
@@ -106,7 +106,7 @@ gsap.from(".sec", {
         start: "-20% center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
-        markers: true
+        // markers: true
     },
     duration: 3,
     y:200,
@@ -119,7 +119,7 @@ gsap.from(".third", {
         start: "-20% center",
         end: "center 40%",
         toggleActions: "restart complete reverse reset",
-        markers: true
+        // markers: true
     },
     duration: 3,
     y:200,
